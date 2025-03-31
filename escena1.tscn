@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://qpwkmgtf0xno"]
+[gd_scene load_steps=3 format=3 uid="uid://qpwkmgtf0xno"]
 
-[ext_resource type="Texture2D" uid="uid://bptfeq62pci2w" path="res://g2503.svg" id="1_b7ldk"]
+[ext_resource type="PackedScene" uid="uid://dgo0injoccb3o" path="res://player.tscn" id="1_b7ldk"]
+[ext_resource type="PackedScene" uid="uid://d15rkd6teutn1" path="res://terreno.tscn" id="2_fndph"]
 
 [node name="MyLevel" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(575, 283)
-texture = ExtResource("1_b7ldk")
+[node name="Player" parent="." instance=ExtResource("1_b7ldk")]
+position = Vector2(327, 90)
+
+[node name="Terreno" parent="." instance=ExtResource("2_fndph")]
