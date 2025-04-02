@@ -1,23 +1,37 @@
-[gd_scene load_steps=4 format=3 uid="uid://d15rkd6teutn1"]
+[gd_scene load_steps=6 format=3 uid="uid://d15rkd6teutn1"]
 
 [ext_resource type="Texture2D" uid="uid://cysh0u1qqoe63" path="res://world/base2.png" id="1_uwfay"]
 [ext_resource type="Texture2D" uid="uid://vkwabf13v2nb" path="res://world/base1.png" id="2_qarfh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qarfh"]
-size = Vector2(716, 175.5)
+size = Vector2(353, 175.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b3cen"]
+size = Vector2(167, 182)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpfcu"]
+size = Vector2(169.5, 175)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(579, 499.25)
+position = Vector2(397.5, 499.25)
 shape = SubResource("RectangleShape2D_qarfh")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(671.5, 552)
+shape = SubResource("RectangleShape2D_b3cen")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(850.25, 496.5)
+shape = SubResource("RectangleShape2D_wpfcu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(488, 499)
 texture = ExtResource("1_uwfay")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(669, 499)
+position = Vector2(669, 548)
 texture = ExtResource("1_uwfay")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
