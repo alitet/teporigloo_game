@@ -94,3 +94,7 @@ shape = SubResource("CapsuleShape2D_sh265")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jm5j8")
 animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -100
+limit_bottom = 900
