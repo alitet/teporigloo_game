@@ -1,34 +1,34 @@
 [gd_scene load_steps=5 format=3 uid="uid://d15rkd6teutn1"]
 
-[ext_resource type="Texture2D" uid="uid://bpmdvmmmkx4kp" path="res://images/fondo1.png" id="1_uwfay"]
+[ext_resource type="Texture2D" uid="uid://crxyqstuclvmm" path="res://images/fonc_af1.png" id="1_uwfay"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qarfh"]
-size = Vector2(206.375, 62.6875)
+size = Vector2(252.188, 62.6875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b3cen"]
-size = Vector2(235.5, 65)
+size = Vector2(194.375, 54.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wpfcu"]
-size = Vector2(235.375, 70.875)
+size = Vector2(180.344, 57.4375)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="FondoCMia1" type="Sprite2D" parent="."]
-position = Vector2(1024, 384)
 texture = ExtResource("1_uwfay")
+centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(471, 650)
+position = Vector2(630, 655)
 shape = SubResource("RectangleShape2D_qarfh")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(758, 559.5)
+position = Vector2(962.813, 572.75)
 shape = SubResource("RectangleShape2D_b3cen")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(1325, 419.563)
+position = Vector2(1243.83, 637.281)
 shape = SubResource("RectangleShape2D_wpfcu")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(322, 548)
-polygon = PackedVector2Array(43, 70, -242, 212, 18, 205)
+position = Vector2(281, 191)
+polygon = PackedVector2Array(-38, 89, -149, 62, -275, 56, -268, 522, 116, 526, 121, 340, 95, 255, 48, 149)

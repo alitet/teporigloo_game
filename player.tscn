@@ -17,8 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://bjv788xrsfjy3" path="res://anims/animC/ratep_c3.png" id="13_dx0e4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
-radius = 31.0
-height = 102.0
+radius = 21.0
+height = 72.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jm5j8"]
 animations = [{
@@ -86,6 +86,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
+floor_max_angle = 1.0472
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -96,5 +97,6 @@ sprite_frames = SubResource("SpriteFrames_jm5j8")
 animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-limit_left = -100
-limit_bottom = 900
+limit_left = -5
+limit_top = -5
+limit_bottom = 1000
