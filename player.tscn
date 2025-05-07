@@ -99,4 +99,4 @@ animation = &"idle"
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = -5
 limit_top = -5
-limit_bottom = 1000
+limit_bottom = 100
